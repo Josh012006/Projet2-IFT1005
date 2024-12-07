@@ -1,0 +1,36 @@
+* {
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+}
+
+
+
+#facts > h1 {
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* Code CSS pour les tailles tablettes */
+@media screen and (min-width: 641px) {
+    
+}
+
+
+
+
+
+
+/* Code CSS pour les tailles desktop */
+@media screen and (min-width: 1008px) {
+    
+}
