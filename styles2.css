@@ -2,18 +2,62 @@ body {
     font-family: "Inter", sans-serif;
 
     font-size: 16px;
+
+    color:#5E6E85;
 }
 
-/* h1 {
-    font-size: 48px;
-} */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #253347;
+}
 
 
 
-#facts > h1 {
+
+
+/* Code de la section Quelques faits */
+.title-facts {
     text-align: center;
 
     font-weight: 600;
+    font-size: 3em;
+}
+
+.intro-facts {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 100%;
+
+    gap: 2em;
+}
+
+.card {
+    border-radius: 1em;
+    box-shadow: 1em 2em 3.5em #8FAECF40;
+
+    padding: 2em;
+
+    max-width: 365px;
+}
+
+.card > div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    row-gap: 1em;
+}
+
+.title-card {
+    font-size: 1.25em;
+}
+
+.img-card {
+    padding: 0.8em;
 }
 
 
@@ -27,6 +71,16 @@ body {
 /* Code CSS pour les tailles tablettes */
 @media screen and (min-width: 641px) {
     
+    /* Code pour la section Quelques Faits */
+    .cards {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    
+        row-gap: 1.5em;
+        column-gap: 0.9em;
+    }
+
 }
 
 
@@ -36,5 +90,26 @@ body {
 
 /* Code CSS pour les tailles desktop */
 @media screen and (min-width: 1008px) {
+
+    body {
+        padding: 129px;
+    }
+
+    .intro {
+        width: 564px;
+    }
+
+    .title-facts, .intro-facts {
+        text-align: left;
+    }
     
+    /* Code pour la section Quelques Faits */
+    .cards {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 2em;
+    }
+
 }
