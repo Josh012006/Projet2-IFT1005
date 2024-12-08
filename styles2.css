@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.1em;
 }
 
 section {
@@ -85,13 +85,18 @@ section {
     background: linear-gradient(to right, #D6FCFE00, #C3C7C4);
 }
 
+.table-container {
+    overflow: auto;
+    max-width: 100%;
+}
+
 .unit-table {
     color: black;
 
     border: 2px solid #F2F2F2;
     border-collapse: collapse;
 
-    overflow: hidden;    /* To be able to use border-radius on my table*/
+    overflow:hidden;    /* To be able to use border-radius on my table*/
 
     border-radius: 0.25em;
 
@@ -157,6 +162,10 @@ section {
 
 /* Code CSS pour les tailles tablettes */
 @media screen and (min-width: 641px) {
+
+    h1 {
+        font-size: 3em;
+    }
     
     /* Code pour la section Quelques Faits */
     .cards {
