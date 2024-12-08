@@ -1,9 +1,11 @@
 body {
     font-family: "Inter", sans-serif;
-
     font-size: 16px;
 
     color:#5E6E85;
+
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -11,21 +13,33 @@ h1, h2, h3, h4, h5, h6 {
     color: #253347;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
+section {
+    padding: 129px 0px;
+}
+
+.intro-table, .intro-facts {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.intro {
+    width: 85%;
+
+    margin: 50px auto;
+}
+
 
 
 
 
 /* Code de la section Quelques faits */
-.title-facts {
-    text-align: center;
-
-    font-weight: 600;
-    font-size: 3em;
-}
-
-.intro-facts {
-    text-align: center;
-}
 
 .cards {
     display: grid;
@@ -65,6 +79,79 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* Code de la section Tableau */
+
+#conversion-table {
+    background: linear-gradient(to right, #D6FCFE00, #C3C7C4);
+}
+
+.unit-table {
+    color: black;
+
+    border: 2px solid #F2F2F2;
+    border-collapse: collapse;
+
+    overflow: hidden;    /* To be able to use border-radius on my table*/
+
+    border-radius: 0.25em;
+
+    margin: auto;
+    width: 95%;
+
+    max-height: 350px;
+}
+
+.unit-table th {
+    padding: 1em;
+    font-weight: bold;
+}
+
+.unit-table td {
+    padding: 1.125em 1em;
+}
+
+.unit-table th:nth-of-type(1) {
+    color: white;
+    background-color: #0F722E;
+}
+
+.unit-table th:nth-of-type(2) {
+    background-color: #9AC5A7;
+}
+
+.unit-table th:nth-of-type(3) {
+    background-color: #D8E2E7;
+}
+
+
+.unit-table tr:nth-of-type(odd) td:nth-of-type(odd) {
+    background-color: #F2F2F2;
+}
+
+.unit-table tr:nth-of-type(odd) td:nth-of-type(even) {
+    background-color: #9AC5A7;
+}
+
+.unit-table tr:nth-of-type(even) td {
+    background-color: white;
+}
+
+
+
+/* Code pour la section Vidéo */
+.intro-video {
+    text-align: left;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container video {
+    width: 85%;
+}
+
+
 
 
 
@@ -81,6 +168,12 @@ h1, h2, h3, h4, h5, h6 {
         column-gap: 0.9em;
     }
 
+
+    /* Code pour la section du Tableau */
+    .unit-table {
+        width: 85%;
+    }
+
 }
 
 
@@ -91,25 +184,47 @@ h1, h2, h3, h4, h5, h6 {
 /* Code CSS pour les tailles desktop */
 @media screen and (min-width: 1008px) {
 
-    body {
+    section {
         padding: 129px;
     }
 
     .intro {
-        width: 564px;
+        width: 50%;
+
+        margin: 50px 0;
     }
 
-    .title-facts, .intro-facts {
+    .title {
         text-align: left;
     }
+
+    .intro-facts, .intro-table {
+        text-align: left;
+    }
+
+
     
     /* Code pour la section Quelques Faits */
+
     .cards {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
 
         gap: 2em;
+    }
+
+
+    /* Code pour la section Tableau */
+
+    .unit-table {
+        width: 100%;
+    }
+
+
+    /* Code pour la section Vidéo */
+    .video-container video {
+        width: 50%;
     }
 
 }
