@@ -26,28 +26,38 @@
         <div class="calc">
             <h3>Entrez les valeurs</h3>
             <form id="calculateur">
-                <label for="valeur">Valeur</label>
-                <input type="text" name="valeur" id="valeur" placeholder="Entrez la valeur">
-                <label for="metres">Unité de valeur</label>
-                <input type="text" name="metres" id="metres" value="m" readonly>
-                <select name="unit" id="unit">
-                    <option value="cm">cm</option>
-                    <option value="km">km</option>
-                    <option value="pi">pi</option>
-                    <option value="po">po</option>
-                </select>
-                <button type="submit" form="calculateur">convertir</button>
+                <div>
+                    <label for="valeur">Valeur</label>
+                    <input type="text" name="valeur" id="valeur" placeholder="Entrez la valeur">
+                </div>
+
+                <div>
+                    <label for="metres">Unité de valeur</label>
+                    <input class="fixed" type="text" name="metres" id="metres" value="m" readonly>
+                </div>
+
+                <div>
+                    <label for="unit">Unité cible</label>
+                    <select name="unit" id="unit">
+                        <option value="cm">cm</option>
+                        <option value="km">km</option>
+                        <option value="pi">pi</option>
+                        <option value="po">po</option>
+                    </select>
+                </div>
+                
+                <button type="submit" form="calculateur" id="convertir">Convertir</button>
             </form>
 
-            <div class="result">
-                <p style="">Entrez les valeurs dans la calculatrice</p>
+            <div id="result">
+                Entrez les valeurs dans la calculatrice
             </div>
         </div>
     </section>
 
     <section>
         <div>
-            <img src="assets/image.png" alt="Image calculatrice">
+            <!-- <img src="assets/image.png" alt="Image calculatrice"> -->
         </div>
 
         <div>

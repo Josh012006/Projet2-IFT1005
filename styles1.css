@@ -2,15 +2,112 @@ body {
     font-family: "Inter", sans-serif;
 
     font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 129px 20px;
 }
 
 
+/* Code pour la section calculatrice */
+
+#calculatrice {
+    background: linear-gradient(#D6FCFE 0%,#C3C7C4 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 24px;
+
+}
+
+.text-calc{
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.3em;
+    text-align: center;
+}
 
 
+.calc {
+    background-color: white;
+    
+    border-radius: 1em;
+    padding: 1.5em;
+    gap: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+}
 
 
+#calculateur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
 
+#calculateur div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
+#calculateur label {
+    font-size: 0.9em;
+}
+
+.fixed {
+    max-width: 60px;
+    max-height:115px;
+}
+
+#calculateur input, #calculateur select {
+    padding: 20px 24px;
+
+    border-radius: 0.75em;
+    border: 1px solid #5E6E85;
+
+    color: #3A6D4A;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#valeur {
+    max-width: 169px;
+}
+
+#convertir {
+    color: white;
+    
+    padding: 1px 10px;
+
+    border: 3px solid #3A6D4A;
+    border-radius: 25px;
+
+    background-color: #3A6D4A;
+
+}
+
+#result {
+    background-color: #3A6D4A;
+
+    border-radius: 16px 999px 999px 16px;
+    padding: 32px;
+    max-height: 150px;
+    max-width: 500px;
+
+    font-weight: bold;
+    color: white;
+}
 
 
 
@@ -23,7 +120,15 @@ body {
 
 /* Code CSS pour les tailles tablettes */
 @media screen and (min-width: 641px) {
-    
+    #calculateur {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #result {
+        font-size: 32px;
+
+    }
 }
 
 
@@ -33,5 +138,11 @@ body {
 
 /* Code CSS pour les tailles desktop */
 @media screen and (min-width: 1008px) {
-    
+    #calculatrice {
+        flex-direction: row;
+    }
+
+    .text-calc {
+        text-align: left;
+    }
 }
