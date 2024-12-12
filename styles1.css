@@ -15,14 +15,13 @@ section {
 /* Code pour la section calculatrice */
 
 #calculatrice {
-    background: linear-gradient(#D6FCFE 0%,#C3C7C4 100%);
+    background: linear-gradient(to bottom right, #D6FCFE 0%, #C3C7C4 100%);
 
     display: flex;
     flex-direction: column;
 
     align-items: center;
     gap: 24px;
-
 }
 
 .text-calc{
@@ -31,7 +30,6 @@ section {
 
 h1 {
     font-size: 3.3em;
-    text-align: center;
 }
 
 
@@ -95,6 +93,8 @@ h1 {
 
     background-color: #3A6D4A;
 
+    cursor: pointer;
+
 }
 
 #result {
@@ -120,6 +120,9 @@ h1 {
 
 /* Code CSS pour les tailles tablettes */
 @media screen and (min-width: 641px) {
+
+    /* Code pour la section calculatrice */
+
     #calculateur {
         flex-direction: row;
         align-items: center;
@@ -138,11 +141,23 @@ h1 {
 
 /* Code CSS pour les tailles desktop */
 @media screen and (min-width: 1008px) {
+
+    section {
+        padding: 129px 100px;
+    }
+
+
+    /* Code pour la section calculatrice */
+
     #calculatrice {
         flex-direction: row;
     }
 
     .text-calc {
         text-align: left;
+    }
+
+    .description-calc {
+        max-width: 75%;
     }
 }
