@@ -12,52 +12,94 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="text-calc">
-        <h1 calss="title-calc">Calculateur d'unités</h1>
-        <p class="description-calc">
-            Les conversions de longueur sont essentielles dans de nombreux aspects de la vie quotidienne, qu'il s'agisse de mesurer des distances
-            pour des voyages, de planifier des projets de construction, ou même d'effectuer des conversions pour des recettes. Notre outil vous permet
-            de convertir rapidement et précisément entre différentes untiés de longueur telles que les mètres, kilomètres, pouces et pieds, vous aidant
-            à adapter vos mesures à différents contextes.
-        </p>
-    </div>
-
-    <div class="calc">
-        <div class="convert-section">
+    <section id="calculatrice">
+        <div class="text-calc">
+            <h1 calss="title-calc">Calculateur d'unités</h1>
+            <p class="description-calc">
+                Les conversions de longueur sont essentielles dans de nombreux aspects de la vie quotidienne, qu'il s'agisse de mesurer des distances
+                pour des voyages, de planifier des projets de construction, ou même d'effectuer des conversions pour des recettes. Notre outil vous permet
+                de convertir rapidement et précisément entre différentes untiés de longueur telles que les mètres, kilomètres, pouces et pieds, vous aidant
+                à adapter vos mesures à différents contextes.
+            </p>
+        </div>
+    
+        <div class="calc">
             <h3>Entrez les valeurs</h3>
-            <div>
-                <p class="bloc-calc">
-                    Valeur
-                </p>
-            </div>
+            <form id="calculateur">
+                <label for="valeur">Valeur</label>
+                <input type="text" name="valeur" id="valeur" placeholder="Entrez la valeur">
+                <label for="metres">Unité de valeur</label>
+                <input type="text" name="metres" id="metres" value="m" readonly>
+                <select name="unit" id="unit">
+                    <option value="cm">cm</option>
+                    <option value="km">km</option>
+                    <option value="pi">pi</option>
+                    <option value="po">po</option>
+                </select>
+                <button type="submit" form="calculateur">convertir</button>
+            </form>
 
-            <div class="bloc-calc">
-                <p class="bloc-name">
-                    Unité de la valeur
-                </p>
-            </div>
-
-            <div class="bloc-calc">
-                <p class="bloc-name">
-                    Valeur
-                </p>
-            </div>
-
-            <div class="convert-button">
-                <p class="bloc-name">
-                    Convertir
-                </p>
-            </div>
-
-            <div class="result-section">
-                <p class="title-result">
-                    Résultat
-                </p>
-                <p class="result-value">
-                    value
-                </p>
+            <div class="result">
+                <p style="">Entrez les valeurs dans la calculatrice</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div>
+            <img src="assets/image.png" alt="Image calculatrice">
+        </div>
+
+        <div>
+            <h2>
+                Comprendre les conversions d'unités
+            </h2>
+            <p>
+                Les conversions d'unités vous aident à comprendre 
+                la relation entre différents systèmes de mesure. 
+                Que vous convertissiez des longueurs, des poids ou 
+                des températures, notre outil simplifie le processus 
+                pour une meilleure précision et compréhension au quotidien.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <img src="assets/svg/convertMK.svg" alt="image conversion mètres en kilomètres">
+            <h3>
+                Conversions de Mètres en Kilomètres
+            </h3>
+            <p>
+                Les mètres et les kilomètres sont utilisés pour mesurer les distances dans les systèmes métriques. 
+                Convertir entre eux est simple : 1 kilomètre équivaut à 1 000 mètres. Cette conversion est utile 
+                pour mesurer des distances sur de longues échelles, comme les trajets en voiture ou les itinéraires de randonnée.
+            </p>
+        </div>
+
+        <div>
+            <img src="assets/svg/convertPM.svg" alt="image conversion pieds en mètres">
+            <h3>
+                Conversions de Pieds en Mètres
+            </h3>
+            <p>
+                Les pieds sont souvent utilisés dans les systèmes de mesure impériaux pour les hauteurs et les distances moyennes. 
+                Convertir les pieds en mètres peut faciliter la compréhension des mesures dans un contexte international, avec 
+                1 pied équivalant à environ 0,3048 mètre.
+            </p>
+        </div>
+
+        <div>
+            <img src="assets/svg/convertPC.svg" alt="image conversion pouces en centimètres">
+            <h3>
+                Conversions de Pouces en Centimètres
+            </h3>
+            <p>
+                Les pouces et les centimètres sont couramment utilisés pour mesurer de petites distances ou des dimensions précises. 
+                Un pouce équivaut à 2,54 centimètres. Cette conversion est pratique pour ajuster des mesures entre les systèmes 
+                impérial et métrique, comme pour les tailles d'écran ou les dimensions de meubles
+            </p>
+        </div>
+    </section>
 </body>
 </html>
