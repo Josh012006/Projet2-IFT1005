@@ -130,7 +130,12 @@ section {
     background-color: #3A6D4A;
 
     cursor: pointer;
+}
 
+#convertir:hover {
+    background-color: #10331B;
+
+    border: 3px solid #10331B;
 }
 
 #result {
@@ -139,10 +144,13 @@ section {
     border-radius: 16px 999px 999px 16px;
     padding: 32px;
     max-height: 150px;
-    max-width: 500px;
 
     font-weight: bold;
     color: white;
+
+    overflow: auto;
+
+    max-width: 280px;
 }
 
 
@@ -352,6 +360,8 @@ section {
 
     #result {
         font-size: 32px;
+
+        max-width: 500px;
     }
 
 
