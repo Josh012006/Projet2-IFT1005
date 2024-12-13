@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    padding: 129px 20px;
+    padding: 110px 20px;
 }
 
 
@@ -113,6 +113,55 @@ h1 {
 
 
 
+/* Code CSS pour la section comprendre */
+
+
+#comprendre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.img-comprendre {
+    text-align: center;
+    background-color: #E8F2EB;
+
+    border-radius: 15px;
+}
+
+.img-comprendre img {
+    width: 90%;
+}
+
+
+
+
+
+
+/* Code CSS pour la section explications */
+
+#explications {
+    background-color: #E8F2EB;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    align-items: center;
+}
+
+
+
+
+
 
 
 
@@ -130,7 +179,17 @@ h1 {
 
     #result {
         font-size: 32px;
+    }
 
+
+    /* Code CSS pour la section comprendre */
+
+    #comprendre {
+        flex-direction: row;
+    }
+
+    .text-comprendre {
+        max-width: 50%;
     }
 }
 
@@ -159,5 +218,14 @@ h1 {
 
     .description-calc {
         max-width: 75%;
+    }
+
+
+    /* Code CSS pour la section comprendre */
+
+    .text-comprendre {
+        margin: 50px;
+
+        max-width: 40%;
     }
 }

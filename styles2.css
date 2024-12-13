@@ -17,6 +17,10 @@ h2 {
     font-size: 2.1em;
 }
 
+h3 {
+    font-size: 1.25em;
+}
+
 section {
     padding: 129px 0px;
 }
@@ -64,10 +68,6 @@ section {
     align-items: center;
 
     row-gap: 1em;
-}
-
-.title-card {
-    font-size: 1.25em;
 }
 
 .img-card {
