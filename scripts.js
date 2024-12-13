@@ -1,3 +1,14 @@
+/*
+Groupe 11
+Membres du groupe:
+Josué Mongan (20290870)
+Kuza Twagiramungu (20317467)
+*/
+
+
+
+
+
 // Récupération des éléments importantes
 
 const valeur = document.getElementById("valeur");
