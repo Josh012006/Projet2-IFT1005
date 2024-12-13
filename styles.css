@@ -431,6 +431,8 @@ section {
 
     .text-calc {
         text-align: left;
+
+        max-width: 50%;
     }
 
     .description-calc {
