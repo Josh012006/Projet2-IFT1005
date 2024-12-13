@@ -82,7 +82,7 @@ section {
 /* Code de la section Tableau */
 
 #conversion-table {
-    background: linear-gradient(to right, #D6FCFE00, #C3C7C4);
+    background: linear-gradient(to bottom right, #D6FCFE 0%, #C3C7C4 100%);
 }
 
 .table-container {
