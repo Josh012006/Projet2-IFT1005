@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #253347;
 }
 
+
+h1 {
+    font-size: 3.3em;
+}
+
 h2 {
     font-size: 2.1em;
 }
@@ -22,7 +27,7 @@ h3 {
 }
 
 section {
-    padding: 129px 0px;
+    padding: 110px 20px;
 }
 
 .intro-table, .intro-facts {
@@ -37,6 +42,170 @@ section {
     width: 85%;
 
     margin: 50px auto;
+}
+
+
+
+
+
+
+
+
+
+/* Code pour la section calculatrice */
+
+#calculatrice {
+    background: linear-gradient(to bottom right, #D6FCFE 0%, #C3C7C4 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 24px;
+}
+
+.text-calc{
+    text-align: center;
+}
+
+
+.calc {
+    background-color: white;
+    
+    border-radius: 1em;
+    padding: 1.5em;
+    gap: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#calculateur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+#calculateur div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#calculateur label {
+    font-size: 0.9em;
+}
+
+.fixed {
+    max-width: 60px;
+    max-height:115px;
+}
+
+#calculateur input, #calculateur select {
+    padding: 20px 24px;
+
+    border-radius: 0.75em;
+    border: 1px solid #5E6E85;
+
+    color: #3A6D4A;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#valeur {
+    max-width: 169px;
+}
+
+#convertir {
+    color: white;
+    
+    padding: 1px 10px;
+
+    border: 3px solid #3A6D4A;
+    border-radius: 25px;
+
+    background-color: #3A6D4A;
+
+    cursor: pointer;
+
+}
+
+#result {
+    background-color: #3A6D4A;
+
+    border-radius: 16px 999px 999px 16px;
+    padding: 32px;
+    max-height: 150px;
+    max-width: 500px;
+
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+/* Code CSS pour la section comprendre */
+
+
+#comprendre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.img-comprendre {
+    text-align: center;
+    background-color: #E8F2EB;
+
+    border-radius: 15px;
+}
+
+.img-comprendre img {
+    width: 90%;
+}
+
+
+
+
+
+/* Code CSS pour la section explications */
+
+#explications {
+    background-color: #E8F2EB;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.conversion img{
+    border-radius: 50%;
+
+    margin: auto;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 15px;
+
+    background-color: #3A6D4A;
 }
 
 
@@ -73,7 +242,6 @@ section {
 .img-card {
     padding: 0.8em;
 }
-
 
 
 
@@ -143,6 +311,8 @@ section {
 
 
 
+
+
 /* Code pour la section Vidéo */
 .intro-video {
     text-align: left;
@@ -160,12 +330,52 @@ section {
 
 
 
+
+
+
+
+
 /* Code CSS pour les tailles tablettes */
 @media screen and (min-width: 641px) {
 
-    h1 {
+    h2 {
         font-size: 3em;
     }
+
+
+    /* Code pour la section calculatrice */
+
+    #calculateur {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #result {
+        font-size: 32px;
+    }
+
+
+    /* Code CSS pour la section comprendre */
+
+    #comprendre {
+        flex-direction: row;
+    }
+
+    .text-comprendre {
+        max-width: 50%;
+    }
+
+
+
+
+    /* Code CSS pour la section explications */
+
+    .conversion {
+        text-align: left;
+
+        max-width: 330px;
+    }
+
     
     /* Code pour la section Quelques Faits */
     .cards {
@@ -194,7 +404,7 @@ section {
 @media screen and (min-width: 1008px) {
 
     section {
-        padding: 129px;
+        padding: 129px 100px;
     }
 
     .intro {
@@ -209,6 +419,43 @@ section {
 
     .intro-facts, .intro-table {
         text-align: left;
+    }
+
+
+
+    /* Code pour la section calculatrice */
+
+    #calculatrice {
+        flex-direction: row;
+    }
+
+    .text-calc {
+        text-align: left;
+    }
+
+    .description-calc {
+        max-width: 75%;
+    }
+
+
+    /* Code CSS pour la section comprendre */
+
+    .text-comprendre {
+        margin: 50px;
+
+        max-width: 40%;
+    }
+
+
+
+    /* Code CSS pour la section explications */
+
+    #explications {
+        flex-direction: row;
+    }
+
+    .conversion {
+        max-width: 370px;
     }
 
 
