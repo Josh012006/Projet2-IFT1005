@@ -41,7 +41,7 @@ valeur.addEventListener("blur", () => {
 });
 
 
-// Gestiond e al soumission du formulaire et du calcul
+// Gestion de la soumission du formulaire et du calcul
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -51,7 +51,7 @@ form.addEventListener("submit", (event) => {
 
     // Vérifications sur la valeur entrée
 
-    if(entree === "" || ( Number(entree) != 0 && ( !Number(entree) || Number(entree) < 0 ) )) {
+    if(entree === "" || ( Number(entree) !== 0 && ( !Number(entree) || Number(entree) < 0 ) )) {
         result.innerHTML = 'Erreur';
 
         result.style.fontSize = '64px';
