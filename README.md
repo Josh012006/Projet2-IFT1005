@@ -65,5 +65,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, 
 
 ## Auteurs
 
-* Josué Mongan
-* Kuza Twagiramungu
+- **Josué Mongan**  
+  GitHub : [Josh012006](https://github.com/Josh012006)  
+- **Kuzatw**  
+  GitHub : [kuzatw](https://github.com/kuzatw)
